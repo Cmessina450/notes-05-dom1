@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>The DOM, Part 1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,7 +21,53 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+       <h1>Manipulating Things in the DOM</h1>
+
+       <p>Javascript uses the DOM to manipulate various elements in an HTML document. The DOM stands for Documents Object MOndel, and it represents every elements in an HTML document. When you use Javascript to change, edit, or otherwise modify the ODM, you are said to be "traversing the DOM".</p>
+
+       <p class= "getThisQuery"> Get This and change it using Javascript's querySelector method. </p>
+
+       <p>querySelector() is a Javascript method that allows you to reach into an HTML document and select eitehr a class (.) or an id (#) and perform some kind of method or function on it. In the above example, we used querySElector () to grap getThisQuery and then used textContent(), another method to change the text using Javascript.</p>
+
+       
+
+       <h2>Manipulating Things using getElementById</h2>
+
+       <p>getElementById use the ID attribute in your HTML elements to select then edit and modify your HTML. It is an Older Method, but is widely supported. getElementByID, only works on ID's (#).</p>
+
+       <p id="getThisId"> Get this using Javascript getElementById.</p>
+
+       
+
+
+
+       <h2>Getting Input from an HTML Form</h2>
+       
+      
+
+            <p>What's your favorite animal?</p>
+
+            <input type="text" class="myAnimal" placeholder= "enter your favorite animal here...">
+
+            <button onclick="submitAnswer()">Submit</button>
+
+            <p class="response"></p>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
